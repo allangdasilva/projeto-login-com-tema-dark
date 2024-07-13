@@ -12,9 +12,13 @@
     main {
         flex-direction: column;
     }
+    
     .left-login {
         width: 100%;
         height: auto;
+    }
+    .theme {
+        margin-top: 2rem;
     }
     .left-login > h1 {
         display: none;

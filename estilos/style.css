@@ -14,6 +14,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+}
+main.active {
+    background-color: #ebfff6;
 }
 .left-login {
     width: 50vw;
@@ -23,21 +27,63 @@ main {
     align-items: center;
     flex-direction: column;
 }
-.left-login > h1 {
-    font-size: 3vw;
-    color: #77ffc0;
-}
 .left-login > img {
-    width: 70%;
+    width: 80%;
+}
+.left-login > img:last-child {
+    display: none;
+}
+main.active .left-login > img {
+    display: none;
+}
+main.active .left-login > img:last-child {
+    display: block;
 }
 .right-login {
     width: 50vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+.theme {
+    margin-bottom: 2rem;
+    width: 55px;
+    height: 26px;
+    border: 2px solid #77ffc0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+main.active .theme {
+    border: 2px solid #C6B5F6;
+}
+.theme i {
+    margin-inline: 3px;
+    color: #77ffc0;
+    cursor: pointer;
+}
+.theme i:first-child {
+    transition: 0.2s;
+}
+main.active i:first-child {
+    color: transparent;
+    cursor: inherit;
+}
+.theme i:last-child {
+    color: transparent;
+    cursor: inherit;
+    transition: 0.2s;
+}
+main.active i:last-child {
+    color: #a791e4;
+    cursor: pointer;
+}
+
 .card-login {
     background-color: #2f2841;
     width: 60%;
@@ -49,9 +95,15 @@ main {
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
+main.active .card-login {
+    background-color: #C6B5F6;
+}
 .card-login > h1 {
     color: #00ff88;
     font-weight: 800;
+}
+main.active .card-login > h1 {
+    color: white;
 }
 .textfield {
     width: 100%;
@@ -76,9 +128,15 @@ main {
 .textfield > input::placeholder {
     color: #f0ffff94;
 }
+main.active .textfield > input::placeholder {
+    color: white;
+}
 .textfield > label {
     color: #f0ffffde;
     margin-bottom: 10px;
+}
+main.active .textfield > label {
+    color: white;
 }
 .btn-login {
     width: 100%;
@@ -95,10 +153,12 @@ main {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
+main.active .btn-login {
+    background-color: #a791e4;
+    color: white;
+    box-shadow: 0px 10px 40px -12px #2b134b;
+}
 .btn-login:hover {
-    background-color: #2b134b;
-    color: #00ff88;
     transform: translate(0px, -3px);
-    box-shadow: 0px 10px 40px -12px #4a198a;
     transition: transform 0.5s;
 }
