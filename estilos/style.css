@@ -2,15 +2,13 @@
 
 * {
     margin: 0px;
-    padding: 0;
     box-sizing: border-box;
 }
 body {
     font-family: "Noto Sans", sans-serif;
-
 }
 main {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #201b2c;
     display: flex;
@@ -22,8 +20,8 @@ main.active {
     background-color: #ebfff6;
 }
 .left-login {
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,9 +40,8 @@ main.active .left-login > img:last-child {
     display: block;
 }
 .right-login {
-    width: 50%;
-    height: 100%;
-    padding-block: 15px;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +86,6 @@ main.active i:last-child {
 
 .card-login {
     background-color: #2f2841;
-
     width: 60%;
     display: flex;
     justify-content: center;
