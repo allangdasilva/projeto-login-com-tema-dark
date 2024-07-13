@@ -36,6 +36,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .card-login {
     background-color: #2f2841;
