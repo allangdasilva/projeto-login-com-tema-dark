@@ -4,15 +4,45 @@
     }
 }
 @media screen and (max-width:950px) {
+    body {
+        height: 100%;
+    }
+    .right-login {
+        padding: 20px;
+    }
+    .theme {
+        margin-bottom: 0.5rem;
+    }
     .card-login {
-        width: 85%;
+        width: 80%;
+        height: 95%;
+        overflow: hidden;
+        padding: 10px 20px 20px 20px;
+    }
+    .card-login input {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+    .textfield {
+        margin-bottom: 1rem;
+    }
+    .textfield-02 {
+        margin-bottom: 1rem;
+    }
+    .textfield > label,
+    .textfield-02 > label {
+        font-size: 0.8rem;
     }
 }
 @media screen and (max-width:600px) {
+    body {
+        height: 100vh;
+    }
+    
     main {
         flex-direction: column;
-        width: 100vw;
-        height: 100%;
+        width: 100%;
+        height: 100vh;
         padding-block: 15px;
     }
     
@@ -20,14 +50,12 @@
         width: 100%;
         height: auto;
     }
-    .theme {
-        margin-top: 2rem;
-    }
+    
     .left-login > h1 {
         display: none;
     }
     .left-login > img {
-        width: 50vw;
+        width: 50%;
     }
     .right-login {
         width: 100%;
@@ -35,5 +63,10 @@
     }
     .card-login {
         width: 90%;
+    }
+}
+@media screen and (max-width:400px) {
+    body {
+        height: 100%;
     }
 }

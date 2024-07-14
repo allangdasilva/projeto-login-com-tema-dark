@@ -99,6 +99,7 @@ main.active .card-login {
     background-color: #C6B5F6;
 }
 .card-login > h1 {
+    font-size: 1.5rem;
     color: #00ff88;
     font-weight: 800;
 }
@@ -111,37 +112,56 @@ main.active .card-login > h1 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px 0px;
+    margin-bottom: 2rem;
 }
-.textfield > input {
+.textfield-02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.textfield > input, .textfield-02 > input {
     width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
     background-color: #514869;
     color: #f0ffffde;
-    font-size: 12pt;
+    font-size: 1rem;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
 }
-.textfield > input::placeholder {
+.textfield > input::placeholder,
+.textfield-02 > input::placeholder {
     color: #f0ffff94;
 }
-main.active .textfield > input::placeholder {
+main.active .textfield > input::placeholder,
+main.active .textfield-02 > input::placeholder {
     color: white;
 }
 .textfield > label {
+    font-size: 1rem;
     color: #f0ffffde;
     margin-bottom: 10px;
 }
-main.active .textfield > label {
+.textfield-02 > label {
+    font-size: 1rem;
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+main.active .textfield > label,
+main.active .textfield-02 > label {
     color: white;
+}
+.textfield {
+    margin-bottom: 2rem;
 }
 .btn-login {
     width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
+    padding: 5% 0;
     border: none;
     border-radius: 8px;
     outline: none;
