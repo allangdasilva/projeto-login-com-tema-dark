@@ -30,15 +30,7 @@ main.active {
 .left-login > img {
     width: 80%;
 }
-.left-login > img:last-child {
-    display: none;
-}
-main.active .left-login > img {
-    display: none;
-}
-main.active .left-login > img:last-child {
-    display: block;
-}
+
 .right-login {
     width: 50vw;
     height: 100vh;
